@@ -1,0 +1,525 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10">
+    <Prefix name="" IRI="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="schema" IRI="https://schema.org"/>
+    <Declaration>
+        <Class IRI="http://schema.org/Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Awards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comedy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comedy_Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disaster_Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fantasy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horror"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horror_Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horror_Comedy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Romance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Romantic_Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Romantic_Comedy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Romantic_Fantasy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Romantic_Thriller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shooting_location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thriller_Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vampire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Writer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zombie"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_actor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_awarded"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_genre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_writer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_directed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_produced_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_shooted_at"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#lead_actor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#award_ceremony"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#award_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#award_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#city_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#city_postalcode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#continent_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#country_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#country_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#movie_agegroup"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#movie_budget"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#movie_duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#movie_language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#movie_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#movie_release"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#person_age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#person_gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#person_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#person_nationality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#person_totalmovies"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shoot_enddate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shoot_startdate"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class IRI="http://schema.org/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Shooting_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comedy"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comedy_Action"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Shooting_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Shooting_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="http://schema.org/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disaster_Action"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fantasy"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fiction"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horror"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horror_Action"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horror_Comedy"/>
+        <Class IRI="#Horror"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monster"/>
+        <Class IRI="#Horror"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producer"/>
+        <Class IRI="http://schema.org/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Romance"/>
+        <Class IRI="#Genere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Romantic_Action"/>
+        <Class IRI="#Romance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Romantic_Comedy"/>
+        <Class IRI="#Romance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Romantic_Fantasy"/>
+        <Class IRI="#Romance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Romantic_Thriller"/>
+        <Class IRI="#Romance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thriller_Action"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vampire"/>
+        <Class IRI="#Horror"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Writer"/>
+        <Class IRI="http://schema.org/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zombie"/>
+        <Class IRI="#Horror"/>
+    </SubClassOf>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#has_writer"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_actor"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_awarded"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_awarded"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_genre"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_writer"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_directed_by"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_produced_by"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_shooted_at"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#lead_actor"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_actor"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_awarded"/>
+        <Class IRI="#Awards"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_genre"/>
+        <Class IRI="#Genere"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_writer"/>
+        <Class IRI="#Writer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_directed_by"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_produced_by"/>
+        <Class IRI="#Producer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_shooted_at"/>
+        <Class IRI="#Shooting_location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#lead_actor"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#award_ceremony"/>
+        <Class IRI="#Awards"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#award_date"/>
+        <Class IRI="#Awards"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#award_name"/>
+        <Class IRI="#Awards"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#city_name"/>
+        <Class IRI="#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#city_postalcode"/>
+        <Class IRI="#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#continent_name"/>
+        <Class IRI="#Continent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#country_code"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#country_name"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#movie_agegroup"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#movie_budget"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#movie_duration"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#movie_language"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#movie_name"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#movie_release"/>
+        <Class IRI="http://schema.org/Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#person_age"/>
+        <Class IRI="http://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#person_gender"/>
+        <Class IRI="http://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#person_name"/>
+        <Class IRI="http://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#person_nationality"/>
+        <Class IRI="http://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#person_totalmovies"/>
+        <Class IRI="http://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#shoot_enddate"/>
+        <Class IRI="#Shooting_location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#shoot_startdate"/>
+        <Class IRI="#Shooting_location"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#award_ceremony"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#award_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#award_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#city_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#city_postalcode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#continent_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#country_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#country_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#movie_agegroup"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#movie_budget"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#movie_duration"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#movie_language"/>
+        <Datatype abbreviatedIRI="xsd:language"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#movie_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#movie_release"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#person_gender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#person_totalmovies"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#shoot_enddate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#shoot_startdate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
